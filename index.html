@@ -7,6 +7,36 @@
 
 <style>
 
+#peter1, #peter2 {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  animation: rotatepeter 2s infinite;
+  transform: rotate(360deg);
+}
+
+#petertext {
+  position: absolute;
+  top: 180px;
+  right: 240px;
+}
+
+#peter1 {
+  animation-direction: alternate-reverse;
+}
+
+#peter2 {
+  animation-direction: alternate;
+}
+
+@keyframes rotatepeter {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>
 </head>
 
@@ -24,11 +54,24 @@
   <div>
     <div><pre>- Denis</pre></div>
   </div>
+
+  <pre id="peter1">O                                       O</pre>
+  <pre id="peter2">O                                       O</pre>
+  <pre id="petertext">
+    Hello Thomas, dear old friend,
+    Appreciate you pay the rent,
+    In kung-fu we do reverse fury
+    Wish you a happy anniversary
+    <3, Peter
+  </per>
   <!-- END CONTENT -->
 
 <script>
 // SCRIPT HERE.
+var peter1rotation = 0;
+setInterval(() => {
 
+}, 100);
 </script>
 </body>
 </html>
