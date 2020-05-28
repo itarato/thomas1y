@@ -64,6 +64,62 @@
     transform: rotate(360deg);
   }
 }
+
+#neil {
+  width: 400px;
+  height: 220px;
+  position: relative;
+}
+#neil span {
+  width: 100%;
+  float: left;
+  color: #FF5733;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-name: neilAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+#neil span {
+  animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+}
+#neil span:first-child {
+  animation-delay: 0.7s;
+}
+#neil span:last-child {
+  animation-delay: 0.5s;
+}
+@keyframes neilAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+  }
+}
+
 </style>
 </head>
 
@@ -106,6 +162,12 @@
     Wish you a happy anniversary
     &lt;3, Peter
   </per>
+
+  <section id="neil">
+    <span>Yo,</span>
+    <span>Congrats for the 1 year!</span>
+    <span>- Neil</span>
+  </section>
   <!-- END CONTENT -->
 
 <script>
