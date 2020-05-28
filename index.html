@@ -20,17 +20,32 @@
   top: 180px;
   right: 240px;
 }
-  
-#alextext {
+
+#alex__container {
+  animation: rotation 600s infinite linear;
   position: absolute;
   top: 180px;
   left: 240px;
 }
 
+<<<<<<< HEAD
 #erictext {
   position: absolute;
   bottom: 50px;
   left: 50px;
+}
+
+#alex__title {
+  text-align: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 #peter1 {
@@ -55,17 +70,15 @@
 <body>
   <!-- START CONTENT -->
 
-
-  
-  <div id="alextext">
-    <h3>You're the best</h3>
+  <div id="alex__container">
+    <h3 id="alex__title">You're the best</h3>
     <pre>
-      There was once upon a time
-      A dear friend, let's call him Thomas.
-      He spent a full year at Shopify
-      And he is the best, that I promise.
+    There was once upon a time
+    A dear friend, let's call him Thomas.
+    He spent a full year at Shopify
+    And he is the best, that I promise.
 
-      - Alex S
+    - Alex S
     </pre>
   </div>
 
