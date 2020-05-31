@@ -110,6 +110,36 @@
   margin: 15px 0 0 0;
   padding: 0;
 }
+
+#jimmy-text {
+  position: absolute;
+  bottom: 0;
+  right: 540px;
+}
+#jimmy-text .col {
+  float: left;
+}
+
+#jimmy-text img {
+  width: 180px;
+}
+
+#jimmy-text .col-text {
+  padding-left: 10px;
+}
+
+#jimmy-text .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  animation: blinker 0.8s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 </style>
 </head>
 
@@ -186,6 +216,28 @@
     Wish you a happy anniversary
     &lt;3, Peter
   </pre>
+
+
+  <div id="jimmy-text">
+    <div class="col col-image">
+      <img src="https://media1.giphy.com/media/YiQs87qG8tu4U/giphy.gif?cid=ecf05e47c9ad5c45561b36e8acaf415d27831caa9ddc3e1d&rid=giphy.gif" alt="">
+    </div>
+    <div class="col col-text">
+      <pre class="title">BON SHOPIANNIV</pre>
+      <pre>
+Félicitations pour ton
+premier Shopianniv.
+
+C'est un énorme plaisir
+de collaborer avec toi,
+j'espère qu'on nous aurons
+l'occasion de travailler
+ensemble encore dans le futur.
+
+- Jimmy
+      </pre>
+    </div>
+  </div>
 
   <img style="position: absolute;top: 400px; left: 200px;transform: rotate(-30deg);" src="https://media3.giphy.com/media/l0ExdXwZquwHGA9Ms/source.gif"/>
   <span style="background-color: red;position: absolute;top: 762px; left: 407px;transform: rotate(-24deg);padding: 12px 32px;font-size: 3em;">Anniversary</span>
