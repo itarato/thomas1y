@@ -28,7 +28,24 @@
   left: 240px;
 }
 
-<<<<<<< HEAD
+#martin__container {
+  position: absolute;
+  left: 40%;
+}
+
+#martin__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#martin__snowman {
+  height: 75px;
+  width: 75px;
+  max-height: 75px;
+  max-width: 75px;
+}
+
 #erictext {
   position: absolute;
   bottom: 50px;
@@ -37,6 +54,12 @@
 
 #alex__title {
   text-align: center;
+}
+
+#rahultext {
+  position: absolute;
+  bottom: 475px;
+  left: 575px;
 }
 
 @keyframes rotation {
@@ -64,6 +87,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 #neil {
   width: 400px;
@@ -120,6 +144,60 @@
   }
 }
 
+
+#denis-lins-text {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 400px;
+  font-family: Helvetica;
+  border: 2px dashed #999;
+  color: #333;
+  padding: 25px;
+}
+
+#denis-lins-text h3 {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+#denis-lins-text p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+#jimmy-text {
+  position: absolute;
+  bottom: 0;
+  right: 540px;
+}
+#jimmy-text .col {
+  float: left;
+}
+
+#jimmy-text img {
+  width: 180px;
+}
+
+#jimmy-text .col-text {
+  padding-left: 10px;
+}
+
+#jimmy-text .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  animation: blinker 0.8s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 </style>
 </head>
 
@@ -138,6 +216,18 @@
     </pre>
   </div>
 
+  <div id="martin__container">
+    <h3>Hats Off!</h3>
+      <div id="martin__content">
+        <img id="martin__snowman" src="https://acegif.com/wp-content/gifs/snowman-90.gif" />
+        <div>
+          <div>Félicitations pour ta première Shopifête!</div>
+          <div>It was great to work with you in Code Red, hope to do so again!</div>
+          <div>- Martin</div>
+        </div>
+      </div>
+  </div>
+
   <div id="erictext">
     <h3>Congrats Thomas</h3>
     <pre>
@@ -148,13 +238,35 @@
     </pre>
   </div>
 
+  <div id="rahultext">
+    <h3>Congrats Thomas</h3>
+    <pre>
+      Thanks for tolerating me in my initial days at Shopify :D
+      Looking forward to working with you again and
+      big congratulations on your Shopiversary.
+
+      - Rahul
+    </pre>
+  </div>
+
   <h4>Congrats for the 1 year</h4>
   <div>
     <div><pre>- Denis</pre></div>
   </div>
 
-  <pre id="peter1">O                                       O</pre>
-  <pre id="peter2">O                                       O</pre>
+  <div id="denis-lins-text">
+    <h3>1 year, congrats Thomas!</h3>
+    <p>
+      It's been a pleasure working with you, man. Hope you're enjoying
+      your time here as much we enjoy having you around. For many
+      more shopiversaries to come!
+    </p>
+    <p>Also, congrats on the new apartment - hope you're enjoying it :)</p>
+    <p>- Denis Lins</p>
+  </div>
+
+  <pre id="peter1">❤️                                       🎁</pre>
+  <pre id="peter2">🎩                                    💻</pre>
   <pre id="petertext">
     Hello Thomas, dear old friend,
     Appreciate you pay the rent,
@@ -168,14 +280,36 @@
     <span>Congrats for the 1 year!</span>
     <span>- Neil</span>
   </section>
+  </pre>
+
+
+  <div id="jimmy-text">
+    <div class="col col-image">
+      <img src="https://media1.giphy.com/media/YiQs87qG8tu4U/giphy.gif?cid=ecf05e47c9ad5c45561b36e8acaf415d27831caa9ddc3e1d&rid=giphy.gif" alt="">
+    </div>
+    <div class="col col-text">
+      <pre class="title">BON SHOPIANNIV</pre>
+      <pre>
+Félicitations pour ton
+premier Shopianniv.
+
+C'est un énorme plaisir
+de collaborer avec toi,
+j'espère qu'on nous aurons
+l'occasion de travailler
+ensemble encore dans le futur.
+
+- Jimmy
+      </pre>
+    </div>
+  </div>
+
+  <img style="position: absolute;top: 400px; left: 200px;transform: rotate(-30deg);" src="https://media3.giphy.com/media/l0ExdXwZquwHGA9Ms/source.gif"/>
+  <span style="background-color: red;position: absolute;top: 762px; left: 407px;transform: rotate(-24deg);padding: 12px 32px;font-size: 3em;">Anniversary</span>
   <!-- END CONTENT -->
 
 <script>
 // SCRIPT HERE.
-var peter1rotation = 0;
-setInterval(() => {
-
-}, 100);
 </script>
 </body>
 </html>
